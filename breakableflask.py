@@ -80,10 +80,11 @@ def cookie():
     cookieValue = None
     value = None
     
-    if request.method == 'POST':
-        cookieValue = request.form['value']
-        value = cookieValue
-    elif 'value' in request.cookies:
+    # if request.method == 'POST':
+        # cookieValue = request.form['value']
+        # value = cookieValue
+    # elif 'value' in request.cookies:
+    if 'value' in request.cookies:
         cookieValue = pickle.loads(b64decode(request.cookies['value'])) 
     
         
