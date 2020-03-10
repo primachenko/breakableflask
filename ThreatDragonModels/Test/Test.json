@@ -4,7 +4,11 @@
     "title": "Test"
   },
   "detail": {
-    "contributors": [],
+    "contributors": [
+      {
+        "name": "123"
+      }
+    ],
     "diagrams": [
       {
         "title": "123",
